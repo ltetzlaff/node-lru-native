@@ -1,38 +1,44 @@
 {
-	"name": "lru-native3",
-	"version": "1.1.0",
-	"description": "LRU cache module written in C++",
-	"keywords": [
-		"LRU",
-		"cache",
-		"native",
-		"c++"
-	],
-	"main": "index.js",
-	"types": "index.d.ts",
-	"maintainers": [
-		{
-			"name": "Lukas Tetzlaff",
-			"url": "https://github.com/ltetzlaff"
-		}
-	],
-	"author": {
-		"name": "Kibae Shin",
-		"email": "nonunnet@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/ltetzlaff/node-lru-native.git"
-	},
-	"license": "MIT",
-	"dependencies": {},
-	"devDependencies": {
-		"chai": "^4.2.0",
-		"coffeescript": "^2.4.0",
-		"mocha": "^6.0.2",
-		"nan": "^2.13.2"
-	},
-	"scripts": {
-		"valgrind": "valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec --compilers coffee:coffee-script"
-	}
+  "name": "lru-native3",
+  "version": "1.1.0",
+  "description": "LRU cache module written in C++",
+  "keywords": [
+    "LRU",
+    "cache",
+    "native",
+    "c++"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "maintainers": [
+    {
+      "name": "Lukas Tetzlaff",
+      "url": "https://github.com/ltetzlaff"
+    }
+  ],
+  "author": {
+    "name": "Kibae Shin",
+    "email": "nonunnet@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ltetzlaff/node-lru-native.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coffeescript": "^2.4.0",
+    "mocha": "^6.0.2",
+    "nan": "^2.13.2",
+    "tslint-lt": "^1.8.0",
+    "typescript": "^3.4.1"
+  },
+  "scripts": {
+    "valgrind": "valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec --compilers coffee:coffee-script",
+    "buildOnce": "node-gyp rebuild",
+    "lint": "tslint --format stylish --project .",
+    "prettier": "prettier --config node_modules/tslint-lt/.prettierrc.yml --write \"{,!node_modules/}**/*.{ts,tsx,css,scss,html,js,jsx,yml,json}\"",
+    "test": "npm run buildOnce && npm run lint && npm run prettier"
+  }
 }
