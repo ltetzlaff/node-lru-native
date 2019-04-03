@@ -1,5 +1,5 @@
 {
-	"name": "lru-native2",
+	"name": "lru-native3",
 	"version": "1.0.1",
 	"description": "LRU cache module written in C++",
 	"keywords": [
@@ -10,9 +10,8 @@
 	],
 	"maintainers": [
 		{
-			"name": "Kibae Shin",
-			"email": "nonunnet@gmail.com",
-			"url": "https://github.com/kibae"
+			"name": "Lukas Tetzlaff",
+			"url": "https://github.com/ltetzlaff"
 		}
 	],
 	"author": {
@@ -21,7 +20,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/kibae/node-lru-native.git"
+		"url": "git://github.com/ltetzlaff/node-lru-native.git"
 	},
 	"license": "MIT",
 	"dependencies": {
