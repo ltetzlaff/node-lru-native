@@ -7,7 +7,9 @@
 		"cache",
 		"native",
 		"c++"
-	],
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
 	"maintainers": [
 		{
 			"name": "Lukas Tetzlaff",
