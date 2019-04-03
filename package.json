@@ -25,14 +25,12 @@
 		"url": "git://github.com/ltetzlaff/node-lru-native.git"
 	},
 	"license": "MIT",
-	"dependencies": {
-		"nan": "latest"
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"chai": "latest",
-		"coffee-script": "1.7.1",
-		"mocha": "latest",
-		"nan": "^2.2.0"
+		"chai": "^4.2.0",
+		"coffeescript": "^2.4.0",
+		"mocha": "^6.0.2",
+		"nan": "^2.13.2"
 	},
 	"scripts": {
 		"valgrind": "valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec --compilers coffee:coffee-script"
