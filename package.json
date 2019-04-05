@@ -25,12 +25,13 @@
     "url": "git://github.com/ltetzlaff/node-lru-native.git"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "nan": "^2.13.2"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "coffeescript": "^2.4.0",
     "mocha": "^6.0.2",
-    "nan": "^2.13.2",
     "tslint-lt": "^1.8.0",
     "typescript": "^3.4.1"
   },
