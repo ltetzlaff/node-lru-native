@@ -1,5 +1,5 @@
 {
-  "name": "lru-native3",
+  "name": "lru-native2",
   "version": "1.1.2",
   "description": "LRU cache module written in C++",
   "keywords": [
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ltetzlaff/node-lru-native.git"
+    "url": "git://github.com/kibae/node-lru-native.git"
   },
   "license": "MIT",
   "dependencies": {
