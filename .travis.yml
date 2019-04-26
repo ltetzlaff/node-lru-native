@@ -10,8 +10,8 @@ addons:
       - valgrind
 
 script:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; npm run valgrind; fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm t; fi
+  - npm t
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run valgrind; fi
 
 node_js:
   - 8
